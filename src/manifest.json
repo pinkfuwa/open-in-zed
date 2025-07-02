@@ -22,12 +22,20 @@
     {
       "matches": ["https://github.com/*"],
       "js": ["src/github.ts"]
+    },
+    {
+      "matches": ["https://gitlab.com/*"],
+      "js": ["src/gitlab.ts"]
     }
   ],
   "{{chrome}}.web_accessible_resources": [
     {
       "resources": ["zed.png"],
       "matches": ["https://github.com/*"]
+    },
+    {
+      "resources": ["zed.png"],
+      "matches": ["https://gitlab.com/*"]
     }
   ],
   "{{firefox}}.web_accessible_resources": ["zed.png"]

@@ -2,9 +2,6 @@ import { observe } from "selector-observer";
 
 const zedPngURL = chrome.runtime.getURL("/zed.png");
 
-const darkMode = window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches;
-
 observe("#clone-with-https, #clone-with-ssh", {
   add: (element) => {
     const gitUrl = (element as HTMLInputElement).value.trim();
