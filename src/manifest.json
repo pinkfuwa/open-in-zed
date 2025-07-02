@@ -9,13 +9,26 @@
     "128": "icon/128.png"
   },
   "{{chrome}}.action": {
-    "default_popup": "src/index/index.html"
+    "default_popup": "src/index.html"
   },
   "{{firefox}}.browser_action": {
-    "default_popup": "src/index/index.html"
+    "default_popup": "src/index.html"
   },
   "background": {
     "{{chrome}}.service_worker": "src/background.ts",
     "{{firefox}}.scripts": ["src/background.ts"]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/github.ts"]
+    }
+  ],
+  "{{chrome}}.web_accessible_resources": [
+    {
+      "resources": ["zed.png"],
+      "matches": ["https://github.com/*"]
+    }
+  ],
+  "{{firefox}}.web_accessible_resources": ["zed.png"]
 }
