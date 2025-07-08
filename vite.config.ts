@@ -18,6 +18,7 @@ export default defineConfig({
     webExtension({
       manifest: generateManifest,
       additionalInputs: ["src/github.ts"],
+      browser: process.env.TARGET || "chrome",
     }),
   ],
 });

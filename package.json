@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "build:chrome": "TARGET=chrome npm run build",
+    "build:firefox": "TARGET=firefox npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -1,6 +1,12 @@
 {
   "{{chrome}}.manifest_version": 3,
   "{{firefox}}.manifest_version": 2,
+  "{{firefox}}.applications": {
+    "gecko": {
+      "id": "open-in-zed@example.com",
+      "strict_min_version": "115.0"
+    }
+  },
   "icons": {
     "48": "icon/48.png",
     "96": "icon/96.png",

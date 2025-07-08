@@ -3,7 +3,8 @@
 > [!IMPORTANT]
 > this project is not affiliate with zed or a zed's product
 
-A browser extension that adds "Open in Zed" buttons to GitHub and GitLab repositories.
+A browser extension that adds "Open in Zed" buttons to GitHub and GitLab
+repositories.
 
 ## Features
 
@@ -16,11 +17,11 @@ A browser extension that adds "Open in Zed" buttons to GitHub and GitLab reposit
 
 ### Chrome Web Store
 
-*(Coming soon)*
+_(Coming soon)_
 
 ### Firefox Add-ons
 
-*(Coming soon)*
+_(Coming soon)_
 
 ### Manual Installation
 
@@ -34,8 +35,10 @@ A browser extension that adds "Open in Zed" buttons to GitHub and GitLab reposit
    pnpm build
    ```
 4. Load the extension in your browser:
-   - **Chrome**: Go to `chrome://extensions/`, enable Developer mode, click "Load unpacked", and select the `dist` directory.
-   - **Firefox**: Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", and select any file in the `dist` directory.
+   - **Chrome**: Go to `chrome://extensions/`, enable Developer mode, click
+     "Load unpacked", and select the `dist` directory.
+   - **Firefox**: Go to `about:debugging#/runtime/this-firefox`, click "Load
+     Temporary Add-on", and select any file in the `dist` directory.
 
 ## Development
 
@@ -55,19 +58,24 @@ A browser extension that adds "Open in Zed" buttons to GitHub and GitLab reposit
    pnpm dev
    ```
 
-4. Load the extension in your browser as described in the Manual Installation section
+4. Load the extension in your browser as described in the Manual Installation
+   section
 
 ## How It Works
 
-This extension injects buttons into GitHub and GitLab repository pages that create `zed://repo/` URLs. When clicked, these URLs open the repository directly in [Zed](https://zed.dev) if it's installed on your system.
+This extension injects buttons into GitHub and GitLab repository pages that
+create `zed://repo/` URLs. When clicked, these URLs open the repository directly
+in [Zed](https://zed.dev) if it's installed on your system.
 
 ### GitHub Integration
 
-Adds a "Clone and open in Zed" button below the HTTPS/SSH clone options on repository pages.
+Adds a "Clone and open in Zed" button below the HTTPS/SSH clone options on
+repository pages.
 
 ### GitLab Integration
 
-Adds "Zed Editor (HTTPS)" and "Zed Editor (SSH)" options to the IDE dropdown menu in the clone panel.
+Adds "Zed Editor (HTTPS)" and "Zed Editor (SSH)" options to the IDE dropdown
+menu in the clone panel.
 
 ## Requirements
 
